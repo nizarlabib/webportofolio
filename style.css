@@ -1,98 +1,291 @@
-* {
+body{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body {
-  margin: 0px;
-  font-family: 'segoe ui';
-  background-color: #333;
+.color-secondary{
+  color: #635985;
 }
 
-.nav {
-  height: 70px;
+.navbar{
+  background-color: white;
+  height: 60px;
   width: 100%;
-  background-color: #ffffff;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
-.nav > .nav-header {
-  display: inline;
+.logo-name{
+  padding-left: 111px;
 }
 
-.nav > .nav-header > .nav-logo {
-  height: 70px;
-  width: 240px;
-  margin-left: 50px;
-  margin-top: 30px;
+.nav-menu{
+  display: flex;
 }
 
-.nav > .nav-btn {
-  display: none;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 67px;
+  overflow: hidden;
+  
 }
 
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
+li {
+  float: left;
 }
 
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
+li a {
+  display: block;
+  color: #635985;
+  text-align: center;
+  padding: 16px;
   text-decoration: none;
-  color: #efefef;
 }
 
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+li a:hover {
+  background-color: #D2D2D2;
 }
 
-.nav > #nav-check {
-  display: none;
+.home-container{
+  height: 550px;
+  background-color: white;
 }
 
-@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
+.hero-container{
+  display: flex;
+  height: 290px;
+  width: 100%;
+}
+
+.hero-container > div{
+  width: 50%;
+}
+
+.hero-container > div > p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #635985;
+  line-height : 0px;
+}
+
+.hero-container > div > h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: #635985;
+  margin : 0; 
+  padding-top:0;
+}
+
+.hero-container > img{
+  height: 407px;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 213px;
+}
+
+.intro{
+  padding-left: 111px;
+  padding-top: 180px;
+  margin-bottom: 0;
+}
+
+.home-container > img {
+  width: 100%;
+  margin-top: 1px;
+}
+
+.profile-container{
+  background-color: #635985;
+  height: 550px;
+}
+
+.profile-hero-container{
+  display: flex;
+}
+
+.profile-container > .profile-hero-container > img{
+  width: 50%;
+}
+
+.profile-container > .profile-hero-container> div{
+  width: 50%;
+}
+
+.photo-profile{
+  width: 350px;
+  height: 355.2px;
+  margin-left: 250px;
+  margin-top: 97px;
+}
+
+.profile1{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 0px;
+  margin-top: 210px;
+}
+
+.profile2{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 0px;
+  margin-top: 0;
+}
+
+.profile3{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  width: 590px;
+  line-height: 27px;
+  margin-top: 0;
+}
+
+.profile-container > img{
+  margin-top: 90px;
+  width: 100%;
+}
+
+.skills-container{
+  height: 780px;
+}
+
+.skills-hero-container{
+  align-items: center;
+  text-align: center;
+  margin-top: 192px;
+}
+
+.skills1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #635985;
+  line-height: 5px;
+}
+
+.skills2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 32px;
+  color: #635985;
+  text-align: center;
+  margin-left: 281px;
+  margin-right: 281px;
+}
+
+.card-group-skills{
+  display: flex;
+  gap: 72px;
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-skills{
+  height: 250px;
+  width: 250px;
+  border-style: solid;
+  background-color: white ;
+  border-width: 5px;
+  border-color: #635985;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-container > img{
+  width: 100%;
+}
+
+.projects-container{
+  background-color: #635985;
+  height: 800px;
+  
+}
+
+.projects1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+  line-height: 5px;
+  padding-top: 149px;
+}
+
+.projects2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  margin-left: 281px;
+  margin-right: 281px;
+}
+
+.projects-hero-container{
+  align-items: center;
+  text-align: center;
+}
+
+.projects-container > .projects-group-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 96px;
+  
+}
+
+.projects-group-container > img{
+  width: 300px;
+  height: 300px;
+}
+
+.contact-container{
+  height: 417px;
+  background-color: #D2D2D2;
+}
+
+.contact-text-title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #635985;
+  margin-left: 146px;
+  padding-top: 67px;
+}
+
+.contact-text{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: #635985;
+  margin-left: 25px;
+}
+
+.contact-item{
+  display: flex;
+}
+
+.contact-right{
+  margin-left: 78px;
+}
+
+.contact-hero-container{
+  display: flex;
+  margin-left: 146px;
 }
