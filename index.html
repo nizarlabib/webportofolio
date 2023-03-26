@@ -4,31 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-            <a class="nav-logo" href="#"><img src="assets/logo.svg" alt=""></a>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar">
+        <h1 class="logo-name color-secondary">NIZAR LABIB</h1>
+        <ul class="nav-menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#profile">PROFILE</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
+        </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- home start -->
+    <section class="home-container" id="home">
+      <div class="hero-container">
+        <div class="intro">
+          <p class="intro1">Hi, I'm</p>
+          <h1>MUHAMMAD NIZAR LABIB</h1>
+          <p class="intro2">Web Developer Enthusiast</p>
         </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+        <img src="assets/face.svg" alt="">
+      </div>
+      <img src="assets/waves1.svg" alt="">
+      
+    </section>
+    <!-- home end -->
+
+    <!-- profile start -->
+    <section class="profile-container" id="profile">
+      <div class="profile-hero-container">
+        <div>
+          <img class="photo-profile" src="assets/profile.svg" alt="">
         </div>
-        
-        <div class="nav-links">
-          <a href="#" target="_blank">Home</a>
-          <a href="#" target="_blank">Profile</a>
-          <a href="#" target="_blank">Skills</a>
-          <a href="#" target="_blank">Projects</a>
-          <a href="#" target="_blank">Contacs</a>
+        <div>
+          <p class="profile1">MUHAMMAD NIZAR LABIB</p>
+          <p class="profile2">Web Developer Enthusiast</p>
+          <p class="profile3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minus, nesciunt laborum illo et sint reprehenderit maxime dolorem sed aliquam.</p>
         </div>
       </div>
+      <img src="assets/waves2.svg" alt="">
+    </section>
+    <!-- profile end -->
+
+    <!-- skills start -->
+    <section class="skills-container" id="skills">
+        <div class="skills-hero-container">
+          <p class="skills1">Skills That I Have</p>
+          <p class="skills2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eligendi ducimus quae.</p>
+        </div>
+        <div class="card-group-skills">
+          <div class="card-skills">
+              <img src="assets/figma.svg" alt="">
+          </div>
+          <div class="card-skills">
+              <img src="assets/reacts.svg" alt="">
+          </div>
+          <div class="card-skills">
+              <img src="assets/express.svg" alt="">
+          </div>
+          <div class="card-skills">
+              <img src="assets/tailwind.svg" alt="">
+          </div>
+        </div>
+        <img src="assets/waves3.svg" alt="">
+    </section>
+    <!-- skills end -->
+    
+    <!-- projects-start -->
+    <section class="projects-container" id="projects">
+      <div class="projects-hero-container">
+        <p class="projects1">Projects I Have Done</p>
+        <p class="projects2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quas modi laboriosam.</p>
+      </div>
+      <div class="projects-group-container">
+        <img src="assets/project1.svg" alt="">
+        <img src="assets/project2.svg" alt="">
+        <img src="assets/project3.svg" alt="">
+      </div>
+    </section>
+    <!-- projects-end -->
+
+    <!-- contact start -->
+    <section class="contact-container" id="contacts">
+      <p class="contact-text-title">You can contact me Here</p>
+        <div class="contact-hero-container">
+          <div class="contact-left">
+            <div class="contact-item">
+              <img src="assets/whatsapp.svg" alt="">
+              <p class="contact-text">+62 896-8053-9772</p>
+            </div>
+            <div class="contact-item">
+              <img src="assets/github.svg" alt="">
+              <p class="contact-text">github.com/nizarlabib</p>
+            </div>
+          </div>
+          <div class="contact-right">
+            <div class="contact-item">
+              <img src="assets/email.svg" alt="">
+              <p class="contact-text">nizarlabib@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <img src="assets/linkedin.svg" alt="">
+              <p class="contact-text">linkedin.com/in/nizarlabib/</p>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <!-- contact end -->
 
 </body>
 </html>
